@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntas</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/estilosJuego.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="juego" class="justife-center flex-colum">
+        <div id="cajaPreguntas">
+          <div class="hud-intem">
+            <p id="progressText" class="caja-prefijo">
+                PREGUNTA
+            </p>
+            <div id="progreso">
+              <div id="progreso-terminado"></div>
+            </div>
+        </div>
+        <div class="hud-intem">
+            <p class="caja-prefijo">Puntos Premio</p>
+            <h1 class="caja-puntos" id="score">0</h1>
+        </div>
+        </div>
+
+        <h1 id="pregunta">Cual es la Respuesta para este pregunta</h1>
+        <div class="contenedor-seleccion">
+          <p class="seleccion-prefijo">A</p>
+          <p class="seleccion-texto" data-number="1">Choice 1</p>
+        </div>
+        <div class="contenedor-seleccion">
+          <p class="seleccion-prefijo">B</p>
+          <p class="seleccion-texto" data-number="2">Choice 2</p>
+        </div>
+        <div class="contenedor-seleccion">
+          <p class="seleccion-prefijo">Cs</p>
+          <p class="seleccion-texto" data-number="3">Choice 3</p>
+        </div>
+        <div class="contenedor-seleccion">
+          <p class="seleccion-prefijo">D</p>
+          <p class="seleccion-texto" data-number="4">Choice 4</p>
+        </div>
+      </div>
+    </div>
+    <script src="/js/juego.js"></script>
+  </body>
+</html>
