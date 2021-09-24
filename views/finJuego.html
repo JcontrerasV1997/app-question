@@ -12,8 +12,8 @@
     <div class="container">
       <div id="fin" class="flex-center flex-colum">
         <h1 id="puntuacionFinal">0</h1>
-        <h2 id="nombre-titulo">Ingrese Su Para guardar la puntuacion</h2>
-        <form class="form-container">
+        <h2 id="nombre-titulo">Ingrese Su nombre Para guardar la puntuacion</h2>
+        <form class="form-container" id="formulario">
           <input
             type="text"
             name="name"
@@ -25,14 +25,15 @@
             class="btn"
             id="boton-guardar"
             type="submit"
-            onclick="saveHighscore(event)">
+            disabled
+            >
             Guardar
           </button>
         </form>
-        <a href="/inicioJuego" class="btn">Jugar De Nuevo</a>
+        
         <a href="/" class="btn">Inicio</a>
       </div>
     </div>
-    <script src="/js/FinJuego.js"></script>
+    <script src="/js/FinJuego.js" type="module" ></script>
   </body>
 </html>

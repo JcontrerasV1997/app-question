@@ -3,6 +3,6 @@ const { HomeController } = require("../controllers");
 router.get('/',HomeController.index);
 router.get('/inicioJuego',HomeController.inicioJuego);
 router.get('/finJuego',HomeController.finJuego);
-router.get('/historial',HomeController.historialJuego);
+router.get('/historialJuego',HomeController.historialJuego);
 
 module.exports = router;

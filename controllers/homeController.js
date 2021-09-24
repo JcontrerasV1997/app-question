@@ -17,7 +17,7 @@ class HomeController {
   }
 
   async historialJuego(req, res) {
-    return render("historial", res);
+    return render("historialJuego", res);
   }
 }
 

@@ -1,5 +1,5 @@
 :root{
-    background-color:rgb(29,26,26);
+    background-color:#5c62c5;
 }
 
 *{
@@ -61,7 +61,7 @@ h2{
     margin-bottom: 1rem;
     text-decoration: none;
     color: rgb(28,26,26);
-    background: linear-gradient(90deg,rgb(3, 34, 100) 0%,rgb(0,102,255) 100%);
+    background: #4285f4;
 }
 
 .btn:hover{
