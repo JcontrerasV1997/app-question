@@ -1,3 +1,4 @@
+
 const pregunta = document.querySelector('#pregunta');
 const seleccion = Array.from(document.querySelectorAll('.seleccion-texto'));
 const progressText = document.querySelector('#progressText');
@@ -19,21 +20,13 @@ let questions = [
     respuesta: 4
   },
   {
-    pregunta: "que es esto",
-    seleccion1: "2",
-    seleccion2: "23",
-    seleccion3: "12",
-    seleccion4: "1222",
+    pregunta: "Fundadores Principales de las farc",
+    seleccion1: "jorge eliecer gaitan",
+    seleccion2: "Tiro Fijo y jacobo arenas",
+    seleccion3: "Jose maria cordova",
+    seleccion4: "Pedreti",
     respuesta: 2
-  },
-  {
-    pregunta: "que es esto",
-    seleccion1: "2",
-    seleccion2: "23",
-    seleccion3: "12",
-    seleccion4: "1222",
-    respuesta: 2
-  },
+  }
 
 ]
 
@@ -52,7 +45,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuestion.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem('mostRecentScore', score)
-     return window.location.assign('/juegoterminado.html')
+     return window.location.assign('/finJuego')
   }
 
   questionCounter++
@@ -75,28 +68,25 @@ getNewQuestion = () => {
 
 seleccion.forEach(seleccion => {
   seleccion.addEventListener('click', e => {
-    
     if (!acceptingAnswers) 
       return
     acceptingAnswers = false
     const selectChoice = e.target
     const selectedAnswer = selectChoice.dataset['number']
-
-    let classToApply = selectedAnswer == currentQuestion.respuesta ? 'correcto' :
-      'incorrecto'
-
+    let classToApply = selectedAnswer == currentQuestion.respuesta ? 'correcto':'incorrecto' 
 
     if (classToApply === 'correcto') {
       incremetScore(SCORE_POINTS)
     }
+    if (classToApply==='incorrecto') {
+      return window.location.assign("/finJuego")
+    }
 
     selectChoice.parentElement.classList.add(classToApply);
-
     setTimeout(() => {
       selectChoice.parentElement.classList.remove(classToApply)
       getNewQuestion()
     }, 1000)
-
   })
 })
 

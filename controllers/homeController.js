@@ -11,6 +11,14 @@ class HomeController {
   async inicioJuego(req, res) {
     return render("inicioJuego", res);
   }
+
+  async finJuego(req, res) {
+    return render("finJuego", res);
+  }
+
+  async historialJuego(req, res) {
+    return render("historial", res);
+  }
 }
 
 module.exports = new HomeController();
