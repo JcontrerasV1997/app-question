@@ -4,7 +4,7 @@
 Teniendo encuenta la descripcion del reto tenemos planteada una solucion
 junto a los parametros solicitados.
 
-## Reconstruir los paquetes de node y desplegar el servidor local con nodemon index. y listo
+## Reconstruir los paquetes de node y desplegar el servidor local con nodemon index y escribir en el navegador localhost:8080
 
 1) Decidi realizar la solucion en Vanilla Js utilizando la sintaxis de class incorporada en la versión de ECMAScript 2015 en la cual separe por clases junto a su constructor y métodos respectivos parte de la solución. 
 
