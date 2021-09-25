@@ -6,7 +6,7 @@ junto a los parametros solicitados.
 
 ## Reconstruir los paquetes de node y desplegar el servidor local con nodemon index. y listo
 
-1) Decidi realizar la solucion en Vanilla Js utilizando la sintaxis de class incorporada en la versión de ECMAScript 2015 en la cual separe por clases junto a su constructor y métodos respectivos parte de la solución. 
+1) Decidi realizar la solucion en Vanilla Js utilizando la sintaxis de class incorporada en la versión de ECMAScript 2016 en la cual separe por clases junto a su constructor y métodos respectivos parte de la solución. 
 
 2) Cree una carpeta modules para crear las clases junto con una carpeta data con un array para el banco de pregunta. La carpeta modules para poder exportar las clases pertinentes sin necesidad de utilizar un transpilador como webpack para este tipo de configuración.
 
@@ -18,9 +18,6 @@ junto a los parametros solicitados.
 
 6) También cree un pequeño midleware para manejar errores de rutas distintas a la aplicación.
 
-7) Modularice lo máximo posible el código, aplico métodos estáticos para llamada también. 
+7) Modularice lo máximo posible el código segun mis conocimientos, aplico métodos estáticos para llamada también. 
 
-8) dentro del codigo hay comentarios que explican un poco el comportamiento del codigo
-
-9) guardo la data del historial dentro del localstorage para luego verlo dentro 
 
