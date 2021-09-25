@@ -1,9 +1,11 @@
 const path = require("path");
 
+// metodo para renderizar la vista con path y dirname
 const render = (file, res) => {
+
   return res.sendFile(path.join(__dirname + `/../views/${file}.html`));
 };
-
+// clase controlador con sus metodos async
 class HomeController {
   async index(req, res) {
     return render("home", res);
